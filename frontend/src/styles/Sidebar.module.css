@@ -1,0 +1,292 @@
+/**
+ * Sidebar styles with folders and .od extension
+ */
+
+.sidebar {
+  width: 260px;
+  height: 100%;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: width 0.15s ease;
+}
+
+.sidebar.collapsed {
+  width: 36px;
+}
+
+.collapseBtn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 12px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.collapseBtn:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.collapsed .collapseBtn {
+  right: 8px;
+}
+
+/* Header */
+.header {
+  padding: 12px 16px;
+  padding-right: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.graphBtn,
+.newBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.15s ease;
+}
+
+.graphBtn:hover,
+.newBtn:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+  border-color: var(--text-muted);
+}
+
+/* Search */
+.search {
+  padding: 8px 12px;
+  position: relative;
+}
+
+/* Vault Section */
+.vaultSection {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px 12px;
+  padding-right: 28px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+.searchInput::placeholder {
+  color: var(--text-muted);
+}
+
+.searchInput:focus {
+  background: var(--bg-primary);
+  border-color: var(--border-focus);
+}
+
+.clearBtn {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.clearBtn:hover {
+  color: var(--text-primary);
+}
+
+/* List */
+.list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Folder styles */
+.folderGroup {
+  margin-bottom: 2px;
+}
+
+.folderHeader {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  color: var(--text-secondary);
+  transition: all 0.1s ease;
+}
+
+.folderHeader:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.folderHeader.activeFolder {
+  background: var(--accent-subtle);
+  color: var(--text-accent);
+}
+
+.folderIcon {
+  font-size: 12px;
+  width: 16px;
+  text-align: center;
+}
+
+.folderName {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.count {
+  font-size: 10px;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+/* Note item */
+.item {
+  width: 100%;
+  padding: 10px 16px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  border-left: 2px solid transparent;
+  transition: all 0.1s ease;
+}
+
+.item:hover {
+  background: var(--bg-hover);
+  border-left-color: var(--border-color);
+}
+
+.item.active {
+  background: var(--bg-active);
+  border-left-color: var(--accent);
+}
+
+.itemContent {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  max-width: 100%;
+}
+
+.itemTitle {
+  font-size: 13px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemExt {
+  font-size: 11px;
+  color: var(--text-muted);
+  opacity: 0.7;
+  font-family: 'Consolas', monospace;
+}
+
+.itemDate {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Drag & Drop styles */
+.item.dragging {
+  opacity: 0.5;
+  background: var(--accent-subtle);
+}
+
+.folderHeader.dropTarget {
+  background: var(--accent-subtle);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+/* User section */
+.userSection {
+  padding: 8px 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.loginBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.loginBtn:hover {
+  opacity: 0.9;
+}
+
+.loginBtn svg {
+  opacity: 0.9;
+}

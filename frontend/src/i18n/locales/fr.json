@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "Vos connaissances, connectees"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "Toutes les notes",
+    "search": "Rechercher des notes...",
+    "newNote": "Nouvelle note",
+    "graphView": "Vue graphique",
+    "noMatches": "Aucune correspondance",
+    "noNotes": "Pas encore de notes"
+  },
+  "workspace": {
+    "selectNote": "Selectionnez une note ou creez-en une nouvelle",
+    "linkHint": "Utilisez [[nom de note]] pour lier les notes",
+    "editor": "Editeur",
+    "preview": "Apercu",
+    "hasLinks": "Contient des liens",
+    "untitled": "Sans titre",
+    "saving": "Enregistrement...",
+    "saved": "Enregistre",
+    "delete": "Supprimer",
+    "markdownHelp": "Aide Markdown"
+  },
+  "graphView": {
+    "title": "Vue Graphique",
+    "hint": "Double-cliquez pour ouvrir - Glissez pour deplacer",
+    "noNotes": "Pas encore de notes liees",
+    "createHint": "Creez des notes et liez-les avec la syntaxe [[nom de note]]"
+  },
+  "createNote": {
+    "title": "Creer une Nouvelle Note",
+    "placeholder": "Nom de la note",
+    "noFolder": "Sans dossier",
+    "cancel": "Annuler",
+    "create": "Creer"
+  },
+  "commandPalette": {
+    "placeholder": "Rechercher ou creer une note...",
+    "createNew": "Creer",
+    "openGraph": "Ouvrir la Vue Graphique",
+    "newNote": "Creer une Nouvelle Note",
+    "noResults": "Aucun resultat"
+  },
+  "hotkeyGuide": {
+    "title": "Raccourcis Clavier",
+    "navigation": "Navigation",
+    "editor": "Editeur",
+    "formatting": "Formatage",
+    "commandPalette": "Palette de Commandes",
+    "showOnStartup": "Afficher au demarrage",
+    "gotIt": "Compris",
+    "shortcuts": {
+      "commandPalette": "Ouvrir la palette de commandes",
+      "quickSwitcher": "Changement rapide",
+      "newNote": "Creer une nouvelle note",
+      "toggleSidebar": "Basculer la barre laterale",
+      "closeTab": "Fermer l'onglet actuel",
+      "showShortcuts": "Afficher les raccourcis",
+      "toggleViewMode": "Changer le mode de vue",
+      "saveNote": "Enregistrer la note",
+      "bold": "Texte en gras",
+      "italic": "Texte en italique",
+      "insertLink": "Inserer un lien",
+      "navigateResults": "Naviguer dans les resultats",
+      "openSelected": "Ouvrir la note selectionnee",
+      "createNew": "Creer une nouvelle note",
+      "openNewTab": "Ouvrir dans un nouvel onglet",
+      "close": "Fermer la palette"
+    }
+  },
+  "settings": {
+    "title": "Parametres",
+    "theme": "Theme",
+    "themes": {
+      "dark": "Sombre",
+      "light": "Clair",
+      "nord": "Nord",
+      "ocean": "Ocean"
+    },
+    "language": "Langue",
+    "folders": "Dossiers",
+    "newFolder": "Nouveau dossier",
+    "folderName": "Nom du dossier",
+    "deleteFolder": "Supprimer le dossier"
+  },
+  "common": {
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "rename": "Renommer",
+    "move": "Deplacer",
+    "export": "Exporter",
+    "import": "Importer",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Reessayer"
+  },
+  "contextMenu": {
+    "openInNewTab": "Ouvrir dans un nouvel onglet",
+    "openToRight": "Ouvrir a droite",
+    "rename": "Renommer",
+    "moveTo": "Deplacer vers...",
+    "bookmark": "Marque-page",
+    "exportPdf": "Exporter en PDF",
+    "copyPath": "Copier le chemin",
+    "delete": "Supprimer",
+    "newNote": "Nouvelle note dans le dossier",
+    "deleteFolder": "Supprimer le dossier"
+  },
+  "welcome": {
+    "title": "Bienvenue sur OdyssVault",
+    "subtitle": "Selectionnez une note dans la barre laterale ou creez-en une nouvelle pour commencer.",
+    "createNote": "Creer une Nouvelle Note",
+    "openGraph": "Ouvrir la Vue Graphique"
+  },
+  "status": {
+    "words": "mots",
+    "chars": "caracteres",
+    "lines": "lignes",
+    "markdown": "Markdown"
+  }
+}

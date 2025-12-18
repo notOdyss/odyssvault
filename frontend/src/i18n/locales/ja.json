@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "あなたの知識をつなげる"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "すべてのノート",
+    "search": "ノートを検索...",
+    "newNote": "新規ノート",
+    "graphView": "グラフビュー",
+    "noMatches": "一致なし",
+    "noNotes": "ノートがありません"
+  },
+  "workspace": {
+    "selectNote": "ノートを選択するか、新規作成してください",
+    "linkHint": "[[ノート名]] でノートをリンク",
+    "editor": "エディター",
+    "preview": "プレビュー",
+    "hasLinks": "リンクあり",
+    "untitled": "無題",
+    "saving": "保存中...",
+    "saved": "保存済み",
+    "delete": "削除",
+    "markdownHelp": "Markdownヘルプ"
+  },
+  "graphView": {
+    "title": "グラフビュー",
+    "hint": "ダブルクリックで開く - ドラッグで移動",
+    "noNotes": "リンクされたノートがありません",
+    "createHint": "ノートを作成し、[[ノート名]] 構文でリンクしてください"
+  },
+  "createNote": {
+    "title": "新規ノート作成",
+    "placeholder": "ノート名",
+    "noFolder": "フォルダなし",
+    "cancel": "キャンセル",
+    "create": "作成"
+  },
+  "commandPalette": {
+    "placeholder": "ノートを検索または作成...",
+    "createNew": "作成",
+    "openGraph": "グラフビューを開く",
+    "newNote": "新規ノート作成",
+    "noResults": "結果なし"
+  },
+  "hotkeyGuide": {
+    "title": "キーボードショートカット",
+    "navigation": "ナビゲーション",
+    "editor": "エディター",
+    "formatting": "フォーマット",
+    "commandPalette": "コマンドパレット",
+    "showOnStartup": "起動時に表示",
+    "gotIt": "了解",
+    "shortcuts": {
+      "commandPalette": "コマンドパレットを開く",
+      "quickSwitcher": "クイックスイッチャー",
+      "newNote": "新規ノート作成",
+      "toggleSidebar": "サイドバー切り替え",
+      "closeTab": "現在のタブを閉じる",
+      "showShortcuts": "ショートカット表示",
+      "toggleViewMode": "表示モード切り替え",
+      "saveNote": "ノートを保存",
+      "bold": "太字",
+      "italic": "斜体",
+      "insertLink": "リンク挿入",
+      "navigateResults": "結果をナビゲート",
+      "openSelected": "選択したノートを開く",
+      "createNew": "新規ノート作成",
+      "openNewTab": "新しいタブで開く",
+      "close": "パレットを閉じる"
+    }
+  },
+  "settings": {
+    "title": "設定",
+    "theme": "テーマ",
+    "themes": {
+      "dark": "ダーク",
+      "light": "ライト",
+      "nord": "Nord",
+      "ocean": "オーシャン"
+    },
+    "language": "言語",
+    "folders": "フォルダ",
+    "newFolder": "新規フォルダ",
+    "folderName": "フォルダ名",
+    "deleteFolder": "フォルダを削除"
+  },
+  "common": {
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "rename": "名前変更",
+    "move": "移動",
+    "export": "エクスポート",
+    "import": "インポート",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "retry": "再試行"
+  },
+  "contextMenu": {
+    "openInNewTab": "新しいタブで開く",
+    "openToRight": "右側で開く",
+    "rename": "名前変更",
+    "moveTo": "移動先...",
+    "bookmark": "ブックマーク",
+    "exportPdf": "PDFにエクスポート",
+    "copyPath": "パスをコピー",
+    "delete": "削除",
+    "newNote": "フォルダに新規ノート",
+    "deleteFolder": "フォルダを削除"
+  },
+  "welcome": {
+    "title": "OdyssVaultへようこそ",
+    "subtitle": "サイドバーからノートを選択するか、新規作成して始めましょう。",
+    "createNote": "新規ノート作成",
+    "openGraph": "グラフビューを開く"
+  },
+  "status": {
+    "words": "単語",
+    "chars": "文字",
+    "lines": "行",
+    "markdown": "Markdown"
+  }
+}

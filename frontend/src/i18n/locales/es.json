@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "Tu conocimiento, conectado"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "Todas las notas",
+    "search": "Buscar notas...",
+    "newNote": "Nueva nota",
+    "graphView": "Vista de grafo",
+    "noMatches": "Sin coincidencias",
+    "noNotes": "Sin notas aun"
+  },
+  "workspace": {
+    "selectNote": "Selecciona una nota o crea una nueva",
+    "linkHint": "Usa [[nombre de nota]] para enlazar notas",
+    "editor": "Editor",
+    "preview": "Vista previa",
+    "hasLinks": "Tiene enlaces",
+    "untitled": "Sin titulo",
+    "saving": "Guardando...",
+    "saved": "Guardado",
+    "delete": "Eliminar",
+    "markdownHelp": "Ayuda de Markdown"
+  },
+  "graphView": {
+    "title": "Vista de Grafo",
+    "hint": "Doble clic para abrir - Arrastra para mover",
+    "noNotes": "Sin notas enlazadas aun",
+    "createHint": "Crea notas y enlazalas usando la sintaxis [[nombre de nota]]"
+  },
+  "createNote": {
+    "title": "Crear Nueva Nota",
+    "placeholder": "Nombre de la nota",
+    "noFolder": "Sin carpeta",
+    "cancel": "Cancelar",
+    "create": "Crear"
+  },
+  "commandPalette": {
+    "placeholder": "Buscar o crear una nota...",
+    "createNew": "Crear",
+    "openGraph": "Abrir Vista de Grafo",
+    "newNote": "Crear Nueva Nota",
+    "noResults": "Sin resultados"
+  },
+  "hotkeyGuide": {
+    "title": "Atajos de Teclado",
+    "navigation": "Navegacion",
+    "editor": "Editor",
+    "formatting": "Formato",
+    "commandPalette": "Paleta de Comandos",
+    "showOnStartup": "Mostrar al iniciar",
+    "gotIt": "Entendido",
+    "shortcuts": {
+      "commandPalette": "Abrir paleta de comandos",
+      "quickSwitcher": "Cambio rapido",
+      "newNote": "Crear nueva nota",
+      "toggleSidebar": "Alternar barra lateral",
+      "closeTab": "Cerrar pestana actual",
+      "showShortcuts": "Mostrar atajos",
+      "toggleViewMode": "Cambiar modo de vista",
+      "saveNote": "Guardar nota",
+      "bold": "Texto en negrita",
+      "italic": "Texto en cursiva",
+      "insertLink": "Insertar enlace",
+      "navigateResults": "Navegar resultados",
+      "openSelected": "Abrir nota seleccionada",
+      "createNew": "Crear nueva nota",
+      "openNewTab": "Abrir en nueva pestana",
+      "close": "Cerrar paleta"
+    }
+  },
+  "settings": {
+    "title": "Configuracion",
+    "theme": "Tema",
+    "themes": {
+      "dark": "Oscuro",
+      "light": "Claro",
+      "nord": "Nord",
+      "ocean": "Oceano"
+    },
+    "language": "Idioma",
+    "folders": "Carpetas",
+    "newFolder": "Nueva carpeta",
+    "folderName": "Nombre de carpeta",
+    "deleteFolder": "Eliminar carpeta"
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "rename": "Renombrar",
+    "move": "Mover",
+    "export": "Exportar",
+    "import": "Importar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar"
+  },
+  "contextMenu": {
+    "openInNewTab": "Abrir en nueva pestana",
+    "openToRight": "Abrir a la derecha",
+    "rename": "Renombrar",
+    "moveTo": "Mover a...",
+    "bookmark": "Marcador",
+    "exportPdf": "Exportar a PDF",
+    "copyPath": "Copiar ruta",
+    "delete": "Eliminar",
+    "newNote": "Nueva nota en carpeta",
+    "deleteFolder": "Eliminar carpeta"
+  },
+  "welcome": {
+    "title": "Bienvenido a OdyssVault",
+    "subtitle": "Selecciona una nota de la barra lateral o crea una nueva para comenzar.",
+    "createNote": "Crear Nueva Nota",
+    "openGraph": "Abrir Vista de Grafo"
+  },
+  "status": {
+    "words": "palabras",
+    "chars": "caracteres",
+    "lines": "lineas",
+    "markdown": "Markdown"
+  }
+}

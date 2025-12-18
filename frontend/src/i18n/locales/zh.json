@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "你的知识，互联互通"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "所有笔记",
+    "search": "搜索笔记...",
+    "newNote": "新建笔记",
+    "graphView": "图谱视图",
+    "noMatches": "无匹配结果",
+    "noNotes": "暂无笔记"
+  },
+  "workspace": {
+    "selectNote": "选择一个笔记或创建新笔记",
+    "linkHint": "使用 [[笔记名称]] 来链接笔记",
+    "editor": "编辑器",
+    "preview": "预览",
+    "hasLinks": "包含链接",
+    "untitled": "无标题",
+    "saving": "保存中...",
+    "saved": "已保存",
+    "delete": "删除",
+    "markdownHelp": "Markdown 帮助"
+  },
+  "graphView": {
+    "title": "图谱视图",
+    "hint": "双击打开笔记 - 拖动移动节点",
+    "noNotes": "暂无链接笔记",
+    "createHint": "创建笔记并使用 [[笔记名称]] 语法来链接它们"
+  },
+  "createNote": {
+    "title": "创建新笔记",
+    "placeholder": "笔记名称",
+    "noFolder": "无文件夹",
+    "cancel": "取消",
+    "create": "创建"
+  },
+  "commandPalette": {
+    "placeholder": "查找或创建笔记...",
+    "createNew": "创建",
+    "openGraph": "打开图谱视图",
+    "newNote": "创建新笔记",
+    "noResults": "无结果"
+  },
+  "hotkeyGuide": {
+    "title": "键盘快捷键",
+    "navigation": "导航",
+    "editor": "编辑器",
+    "formatting": "格式化",
+    "commandPalette": "命令面板",
+    "showOnStartup": "启动时显示",
+    "gotIt": "知道了",
+    "shortcuts": {
+      "commandPalette": "打开命令面板",
+      "quickSwitcher": "快速切换",
+      "newNote": "创建新笔记",
+      "toggleSidebar": "切换侧边栏",
+      "closeTab": "关闭当前标签",
+      "showShortcuts": "显示快捷键",
+      "toggleViewMode": "切换视图模式",
+      "saveNote": "保存笔记",
+      "bold": "粗体",
+      "italic": "斜体",
+      "insertLink": "插入链接",
+      "navigateResults": "浏览结果",
+      "openSelected": "打开选中笔记",
+      "createNew": "创建新笔记",
+      "openNewTab": "在新标签中打开",
+      "close": "关闭面板"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "theme": "主题",
+    "themes": {
+      "dark": "深色",
+      "light": "浅色",
+      "nord": "Nord",
+      "ocean": "海洋"
+    },
+    "language": "语言",
+    "folders": "文件夹",
+    "newFolder": "新建文件夹",
+    "folderName": "文件夹名称",
+    "deleteFolder": "删除文件夹"
+  },
+  "common": {
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "rename": "重命名",
+    "move": "移动",
+    "export": "导出",
+    "import": "导入",
+    "loading": "加载中...",
+    "error": "错误",
+    "retry": "重试"
+  },
+  "contextMenu": {
+    "openInNewTab": "在新标签中打开",
+    "openToRight": "在右侧打开",
+    "rename": "重命名",
+    "moveTo": "移动到...",
+    "bookmark": "书签",
+    "exportPdf": "导出为 PDF",
+    "copyPath": "复制路径",
+    "delete": "删除",
+    "newNote": "在文件夹中新建笔记",
+    "deleteFolder": "删除文件夹"
+  },
+  "welcome": {
+    "title": "欢迎使用 OdyssVault",
+    "subtitle": "从侧边栏选择一个笔记或创建新笔记开始使用。",
+    "createNote": "创建新笔记",
+    "openGraph": "打开图谱视图"
+  },
+  "status": {
+    "words": "字数",
+    "chars": "字符",
+    "lines": "行数",
+    "markdown": "Markdown"
+  }
+}

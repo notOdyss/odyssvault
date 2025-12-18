@@ -1,0 +1,469 @@
+/**
+ * Workspace styles with [[linking]], view modes, and resizable panels
+ */
+
+.workspace {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+}
+
+.empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+}
+
+.emptyIcon {
+  opacity: 0.5;
+}
+
+.emptyHint {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* Title bar */
+.titleBar {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+}
+
+.titleWrapper {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.titleInput {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 4px 0;
+  color: var(--text-primary);
+  background: transparent;
+}
+
+.titleInput::placeholder {
+  color: var(--text-muted);
+}
+
+.titleExt {
+  font-size: 13px;
+  color: var(--text-muted);
+  opacity: 0.6;
+  font-family: 'Consolas', monospace;
+}
+
+.titleActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.saveStatus {
+  font-size: 11px;
+  color: var(--text-muted);
+  min-width: 50px;
+  text-align: right;
+}
+
+/* View mode toggle */
+.viewModeToggle {
+  display: flex;
+  align-items: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 2px;
+  gap: 2px;
+}
+
+.viewModeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 24px;
+  border-radius: 3px;
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+}
+
+.viewModeBtn:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+}
+
+.viewModeBtn.active {
+  color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.actionBtn {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+  transition: all 0.15s ease;
+}
+
+.actionBtn:hover {
+  color: var(--text-primary);
+  background: var(--bg-hover);
+  border-color: var(--text-muted);
+}
+
+.deleteBtn {
+  border-color: var(--danger);
+  color: var(--danger);
+  background: transparent;
+}
+
+.deleteBtn:hover {
+  background: var(--danger);
+  color: white;
+}
+
+/* Content area */
+.content {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  position: relative;
+}
+
+/* Panel Group for split view */
+.panelGroup {
+  flex: 1;
+  display: flex;
+}
+
+.editorPane,
+.previewPane {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+}
+
+.paneHeader {
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.linkBadge {
+  padding: 2px 6px;
+  font-size: 9px;
+  background: var(--accent-subtle);
+  color: var(--accent);
+  border-radius: 4px;
+}
+
+.editor {
+  flex: 1;
+  padding: 16px;
+  font-family: 'Consolas', 'Monaco', 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  resize: none;
+  border: none;
+}
+
+.editor::placeholder {
+  color: var(--text-muted);
+}
+
+/* Resize handle */
+.resizeHandle {
+  width: 6px;
+  background: var(--border-color);
+  cursor: col-resize;
+  transition: background 0.15s ease;
+  position: relative;
+}
+
+.resizeHandle:hover,
+.resizeHandle:active {
+  background: var(--accent);
+}
+
+.resizeHandleInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 32px;
+  background: var(--text-muted);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.resizeHandle:hover .resizeHandleInner {
+  opacity: 0.5;
+}
+
+/* Preview */
+.previewPane {
+  overflow: hidden;
+}
+
+.preview {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+}
+
+.previewEmpty {
+  color: var(--text-muted);
+}
+
+/* Note links [[]] */
+.noteLink {
+  display: inline;
+  padding: 2px 6px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.linkExists {
+  background: var(--accent-subtle);
+  color: var(--link-color);
+  border: 1px solid transparent;
+}
+
+.linkExists:hover {
+  border-color: var(--accent);
+  text-decoration: underline;
+}
+
+.linkMissing {
+  background: rgba(241, 76, 76, 0.1);
+  color: var(--danger);
+  border: 1px dashed var(--danger);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Markdown rendering */
+.preview h1,
+.preview h2,
+.preview h3,
+.preview h4,
+.preview h5,
+.preview h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.preview h1:first-child,
+.preview h2:first-child,
+.preview h3:first-child {
+  margin-top: 0;
+}
+
+.preview h1 { font-size: 1.8em; }
+.preview h2 { font-size: 1.5em; }
+.preview h3 { font-size: 1.25em; }
+.preview h4 { font-size: 1.1em; }
+
+.preview p {
+  margin-bottom: 1em;
+}
+
+.preview ul,
+.preview ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.preview li {
+  margin-bottom: 0.25em;
+}
+
+.preview code {
+  font-family: 'Consolas', monospace;
+  font-size: 0.9em;
+  padding: 2px 6px;
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+.preview pre {
+  margin-bottom: 1em;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.preview pre code {
+  padding: 0;
+  background: none;
+}
+
+.preview blockquote {
+  margin: 1em 0;
+  padding-left: 16px;
+  border-left: 3px solid var(--accent);
+  color: var(--text-secondary);
+}
+
+.preview a {
+  color: var(--link-color);
+}
+
+.preview hr {
+  margin: 1.5em 0;
+  border: none;
+  border-top: 1px solid var(--border-color);
+}
+
+.preview img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Help panel */
+.helpPane {
+  width: 200px;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.helpHeader {
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.helpHeader button {
+  color: var(--text-muted);
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+
+.helpHeader button:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.helpContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.helpSection {
+  margin-bottom: 16px;
+}
+
+.helpSection h4 {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.helpSection code {
+  display: block;
+  font-family: 'Consolas', monospace;
+  font-size: 11px;
+  padding: 4px 8px;
+  margin-bottom: 2px;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+/* Backlinks section */
+.backlinksSection {
+  padding: 12px 16px;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* Status bar */
+.statusBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 16px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.wordCount {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.wordCount .divider {
+  color: var(--border-color);
+  margin: 0 4px;
+}
+
+.statusRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fileType {
+  color: var(--text-secondary);
+}

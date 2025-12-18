@@ -1,0 +1,197 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "Your knowledge, connected"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "All Notes",
+    "search": "Search notes...",
+    "newNote": "New note",
+    "graphView": "Graph view",
+    "noMatches": "No matches",
+    "noNotes": "No notes yet"
+  },
+  "workspace": {
+    "selectNote": "Select a note or create a new one",
+    "linkHint": "Use [[note name]] to link notes together",
+    "editor": "Editor",
+    "preview": "Preview",
+    "hasLinks": "Has links",
+    "untitled": "Untitled",
+    "saving": "Saving...",
+    "saved": "Saved",
+    "delete": "Delete",
+    "markdownHelp": "Markdown help"
+  },
+  "graphView": {
+    "title": "Graph View",
+    "hint": "Double-click to open note - Drag to move",
+    "noNotes": "No linked notes yet",
+    "createHint": "Create notes and link them using [[note name]] syntax"
+  },
+  "createNote": {
+    "title": "Create New Note",
+    "placeholder": "Note name",
+    "noFolder": "No folder",
+    "cancel": "Cancel",
+    "create": "Create"
+  },
+  "commandPalette": {
+    "placeholder": "Find or create a note...",
+    "createNew": "Create",
+    "openGraph": "Open Graph View",
+    "newNote": "Create New Note",
+    "noResults": "No results found"
+  },
+  "hotkeyGuide": {
+    "title": "Keyboard Shortcuts",
+    "navigation": "Navigation",
+    "editor": "Editor",
+    "formatting": "Formatting",
+    "commandPalette": "Command Palette",
+    "showOnStartup": "Show on startup",
+    "gotIt": "Got it",
+    "shortcuts": {
+      "commandPalette": "Open command palette",
+      "quickSwitcher": "Quick switcher",
+      "newNote": "Create new note",
+      "toggleSidebar": "Toggle sidebar",
+      "closeTab": "Close current tab",
+      "showShortcuts": "Show shortcuts",
+      "toggleViewMode": "Toggle view mode",
+      "saveNote": "Save note",
+      "bold": "Bold text",
+      "italic": "Italic text",
+      "insertLink": "Insert link",
+      "navigateResults": "Navigate results",
+      "openSelected": "Open selected note",
+      "createNew": "Create new note",
+      "openNewTab": "Open in new tab",
+      "close": "Close palette"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme",
+    "themes": {
+      "dark": "Dark",
+      "light": "Light",
+      "nord": "Nord",
+      "ocean": "Ocean"
+    },
+    "language": "Language",
+    "folders": "Folders",
+    "newFolder": "New folder",
+    "folderName": "Folder name",
+    "deleteFolder": "Delete folder",
+    "plugins": "Plugins",
+    "noFolder": "No folders"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "rename": "Rename",
+    "move": "Move",
+    "export": "Export",
+    "import": "Import",
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry"
+  },
+  "contextMenu": {
+    "openInNewTab": "Open in new tab",
+    "openToRight": "Open to the right",
+    "rename": "Rename",
+    "moveTo": "Move to...",
+    "bookmark": "Bookmark",
+    "exportPdf": "Export to PDF",
+    "copyPath": "Copy path",
+    "delete": "Delete",
+    "newNote": "New note in folder",
+    "deleteFolder": "Delete folder"
+  },
+  "welcome": {
+    "title": "Welcome to OdyssVault",
+    "subtitle": "Select a note from the sidebar or create a new one to get started.",
+    "createNote": "Create New Note",
+    "openGraph": "Open Graph View"
+  },
+  "status": {
+    "words": "words",
+    "chars": "chars",
+    "lines": "lines",
+    "markdown": "Markdown"
+  },
+  "auth": {
+    "login": "Log In",
+    "register": "Sign Up",
+    "logout": "Log Out",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "continueAsGuest": "Continue as Guest",
+    "guestNote": "Guest data is temporary",
+    "orDivider": "or",
+    "welcomeBack": "Welcome back",
+    "createAccount": "Create your account",
+    "loginSuccess": "Logged in successfully",
+    "registerSuccess": "Account created successfully",
+    "logoutSuccess": "Logged out successfully",
+    "errors": {
+      "invalidEmail": "Please enter a valid email",
+      "shortPassword": "Password must be at least 6 characters",
+      "passwordMismatch": "Passwords do not match",
+      "shortUsername": "Username must be at least 3 characters",
+      "emailTaken": "Email already registered",
+      "usernameTaken": "Username already taken",
+      "invalidCredentials": "Invalid email or password"
+    }
+  },
+  "vault": {
+    "title": "Vaults",
+    "myVault": "My Vault",
+    "createVault": "Create Vault",
+    "deleteVault": "Delete Vault",
+    "vaultName": "Vault name",
+    "maxReached": "Maximum 3 vaults (upgrade for more)",
+    "cannotDeleteDefault": "Cannot delete default vault",
+    "switchVault": "Switch Vault"
+  },
+  "backlinks": {
+    "title": "Backlinks",
+    "noBacklinks": "No backlinks yet",
+    "hint": "Other notes linking here will appear in this section"
+  },
+  "versions": {
+    "title": "Version History",
+    "versions": "versions",
+    "noVersions": "No version history yet",
+    "hint": "Changes to this note will be saved as versions",
+    "restore": "Restore this version"
+  },
+  "plugins": {
+    "title": "Plugins",
+    "search": "Search plugins...",
+    "noPlugins": "No plugins found",
+    "installed": "Installed",
+    "install": "Install",
+    "uninstall": "Uninstall",
+    "note": "Plugin system is in beta. More plugins coming soon!"
+  },
+  "import": {
+    "title": "Import Files",
+    "dropFiles": "Drag and drop files here",
+    "clickToSelect": "or click to select files",
+    "selectedFiles": "Selected Files",
+    "supportedFormats": "Supported Formats",
+    "import": "Import",
+    "importing": "Importing...",
+    "error": "Failed to import files. Please try again."
+  }
+}

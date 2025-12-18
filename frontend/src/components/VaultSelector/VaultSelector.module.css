@@ -1,0 +1,270 @@
+/* Vault Selector Styles */
+
+.vaultSelector {
+  position: relative;
+  width: 100%;
+}
+
+.trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.trigger:hover {
+  background: var(--bg-hover);
+  border-color: var(--text-muted);
+}
+
+.vaultName {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow: hidden;
+  animation: slideDown 0.15s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdownHeader {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+}
+
+.vaultList {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.vaultItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  transition: background 0.15s;
+}
+
+.vaultItem:hover {
+  background: var(--bg-hover);
+}
+
+.vaultItem.active {
+  background: var(--accent-subtle);
+}
+
+.vaultBtn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.vaultBtn span {
+  flex: 1;
+}
+
+.badge {
+  font-size: 10px;
+  color: var(--accent-color);
+  background: var(--accent-subtle);
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.deleteBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.deleteBtn:hover {
+  color: var(--error-color, #ef4444);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.createBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border-color);
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.createBtn:hover {
+  background: var(--bg-hover);
+}
+
+.limitNote {
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-color);
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* Create Modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 1rem;
+}
+
+.modal {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 360px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.125rem;
+  color: var(--text-primary);
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  margin-bottom: 1rem;
+}
+
+.modal input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.15);
+}
+
+.error {
+  color: var(--error-color, #ef4444);
+  font-size: 0.75rem;
+  margin-top: -0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.modalActions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.modalActions button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.modalActions button[type="button"] {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.modalActions button[type="button"]:hover {
+  background: var(--bg-hover);
+}
+
+.primaryBtn {
+  background: var(--accent-color) !important;
+  color: white !important;
+  border: none !important;
+}
+
+.primaryBtn:hover {
+  opacity: 0.9;
+}

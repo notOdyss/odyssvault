@@ -1,0 +1,124 @@
+/**
+ * CreateNoteModal styles - Obsidian-inspired
+ */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-modal);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 20vh;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.modal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.inputWrapper {
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+}
+
+.input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 2px var(--accent-subtle);
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.preview {
+  padding: 8px 16px;
+  margin-bottom: 16px;
+}
+
+.filename {
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.extension {
+  color: var(--text-muted);
+  opacity: 0.6;
+}
+
+.folderSelect {
+  margin-bottom: 16px;
+}
+
+.select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.select:focus {
+  border-color: var(--border-focus);
+  outline: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.cancelBtn,
+.createBtn {
+  padding: 8px 16px;
+  font-size: 13px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  transition: all 0.15s ease;
+}
+
+.cancelBtn {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.cancelBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.createBtn {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.createBtn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.createBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

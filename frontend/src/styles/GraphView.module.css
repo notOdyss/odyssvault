@@ -1,0 +1,138 @@
+/**
+ * GraphView styles
+ */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 64px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+}
+
+.title {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hint {
+  flex: 1;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.closeBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.canvas {
+  display: block;
+}
+
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-muted);
+  text-align: center;
+  font-size: 14px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.empty svg {
+  opacity: 0.5;
+}
+
+.empty p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text-secondary);
+}
+
+.empty span {
+  font-size: 13px;
+}
+
+/* Full view mode styles */
+.fullView {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.fullViewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+}
+
+.fullViewTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.fullViewTitle svg {
+  color: var(--accent);
+}
+
+.fullView .canvas {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.fullView .empty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

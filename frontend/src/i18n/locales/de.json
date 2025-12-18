@@ -1,0 +1,125 @@
+{
+  "app": {
+    "name": "OdyssVault",
+    "tagline": "Dein Wissen, verbunden"
+  },
+  "sidebar": {
+    "title": "OdyssVault",
+    "allNotes": "Alle Notizen",
+    "search": "Notizen suchen...",
+    "newNote": "Neue Notiz",
+    "graphView": "Graph-Ansicht",
+    "noMatches": "Keine Treffer",
+    "noNotes": "Noch keine Notizen"
+  },
+  "workspace": {
+    "selectNote": "Wahle eine Notiz oder erstelle eine neue",
+    "linkHint": "Verwende [[Notizname]] um Notizen zu verlinken",
+    "editor": "Editor",
+    "preview": "Vorschau",
+    "hasLinks": "Hat Links",
+    "untitled": "Ohne Titel",
+    "saving": "Speichern...",
+    "saved": "Gespeichert",
+    "delete": "Loschen",
+    "markdownHelp": "Markdown-Hilfe"
+  },
+  "graphView": {
+    "title": "Graph-Ansicht",
+    "hint": "Doppelklick zum Offnen - Ziehen zum Bewegen",
+    "noNotes": "Noch keine verlinkten Notizen",
+    "createHint": "Erstelle Notizen und verlinke sie mit der [[Notizname]] Syntax"
+  },
+  "createNote": {
+    "title": "Neue Notiz erstellen",
+    "placeholder": "Notizname",
+    "noFolder": "Kein Ordner",
+    "cancel": "Abbrechen",
+    "create": "Erstellen"
+  },
+  "commandPalette": {
+    "placeholder": "Notiz suchen oder erstellen...",
+    "createNew": "Erstellen",
+    "openGraph": "Graph-Ansicht offnen",
+    "newNote": "Neue Notiz erstellen",
+    "noResults": "Keine Ergebnisse"
+  },
+  "hotkeyGuide": {
+    "title": "Tastaturkurzel",
+    "navigation": "Navigation",
+    "editor": "Editor",
+    "formatting": "Formatierung",
+    "commandPalette": "Befehlspalette",
+    "showOnStartup": "Beim Start anzeigen",
+    "gotIt": "Verstanden",
+    "shortcuts": {
+      "commandPalette": "Befehlspalette offnen",
+      "quickSwitcher": "Schnellwechsler",
+      "newNote": "Neue Notiz erstellen",
+      "toggleSidebar": "Seitenleiste umschalten",
+      "closeTab": "Aktuellen Tab schliessen",
+      "showShortcuts": "Kurzel anzeigen",
+      "toggleViewMode": "Ansichtsmodus wechseln",
+      "saveNote": "Notiz speichern",
+      "bold": "Fett",
+      "italic": "Kursiv",
+      "insertLink": "Link einfugen",
+      "navigateResults": "Ergebnisse navigieren",
+      "openSelected": "Ausgewahlte Notiz offnen",
+      "createNew": "Neue Notiz erstellen",
+      "openNewTab": "In neuem Tab offnen",
+      "close": "Palette schliessen"
+    }
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "theme": "Design",
+    "themes": {
+      "dark": "Dunkel",
+      "light": "Hell",
+      "nord": "Nord",
+      "ocean": "Ozean"
+    },
+    "language": "Sprache",
+    "folders": "Ordner",
+    "newFolder": "Neuer Ordner",
+    "folderName": "Ordnername",
+    "deleteFolder": "Ordner loschen"
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Loschen",
+    "rename": "Umbenennen",
+    "move": "Verschieben",
+    "export": "Exportieren",
+    "import": "Importieren",
+    "loading": "Laden...",
+    "error": "Fehler",
+    "retry": "Erneut versuchen"
+  },
+  "contextMenu": {
+    "openInNewTab": "In neuem Tab offnen",
+    "openToRight": "Rechts offnen",
+    "rename": "Umbenennen",
+    "moveTo": "Verschieben nach...",
+    "bookmark": "Lesezeichen",
+    "exportPdf": "Als PDF exportieren",
+    "copyPath": "Pfad kopieren",
+    "delete": "Loschen",
+    "newNote": "Neue Notiz im Ordner",
+    "deleteFolder": "Ordner loschen"
+  },
+  "welcome": {
+    "title": "Willkommen bei OdyssVault",
+    "subtitle": "Wahle eine Notiz aus der Seitenleiste oder erstelle eine neue um zu beginnen.",
+    "createNote": "Neue Notiz erstellen",
+    "openGraph": "Graph-Ansicht offnen"
+  },
+  "status": {
+    "words": "Worter",
+    "chars": "Zeichen",
+    "lines": "Zeilen",
+    "markdown": "Markdown"
+  }
+}

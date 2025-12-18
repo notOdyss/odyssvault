@@ -1,0 +1,331 @@
+/**
+ * Settings panel styles
+ */
+
+.container {
+  position: relative;
+}
+
+.toggleBtn {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-subtle);
+  transition: all 0.15s ease;
+}
+
+.toggleBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.panel {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.closeBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.section {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+}
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.actionBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 13px;
+  transition: all 0.15s ease;
+}
+
+.actionBtn:hover {
+  border-color: var(--text-muted);
+  background: var(--bg-hover);
+}
+
+.actionBtn svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.sectionHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.sectionHeader .sectionTitle {
+  margin-bottom: 0;
+}
+
+.expandIcon {
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Themes */
+.themes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.themeBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.themeBtn:hover {
+  border-color: var(--text-muted);
+}
+
+.themeBtn.active {
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.themeColor {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.themeName {
+  font-size: 12px;
+  color: var(--text-primary);
+}
+
+/* Languages */
+.languagesContent {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.langBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  text-align: left;
+}
+
+.langBtn:hover {
+  border-color: var(--text-muted);
+  background: var(--bg-hover);
+}
+
+.langBtn.active {
+  border-color: var(--accent);
+  background: var(--accent-subtle);
+}
+
+.langNative {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.langName {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex: 1;
+}
+
+.checkmark {
+  color: var(--accent);
+  font-size: 14px;
+}
+
+/* Folders */
+.foldersContent {
+  margin-top: 12px;
+}
+
+.createFolder {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.folderInput {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.folderInput:focus {
+  border-color: var(--border-focus);
+}
+
+.addFolderBtn {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.addFolderBtn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.addFolderBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.folderList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.emptyFolders {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 8px;
+}
+
+.folderItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: var(--bg-tertiary);
+}
+
+.folderIcon {
+  font-size: 12px;
+}
+
+.folderName {
+  flex: 1;
+  font-size: 12px;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deleteFolderBtn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  font-size: 14px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+
+.folderItem:hover .deleteFolderBtn {
+  opacity: 1;
+}
+
+.deleteFolderBtn:hover {
+  background: var(--danger);
+  color: white;
+}
+
+/* Footer */
+.footer {
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.appName {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.version {
+  font-size: 10px;
+  color: var(--text-muted);
+}
